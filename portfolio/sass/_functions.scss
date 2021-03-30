@@ -1,0 +1,41 @@
+@mixin backgroundImage($url) {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: $url;
+}
+
+@mixin lineDisplay() {
+    line-height: 7vh;
+	display: inline;
+}
+@mixin center($horizontalPosition) {
+    display: flex;
+    justify-content: $horizontalPosition;
+    align-items: center;
+}
+
+@mixin relativeOver($zIndex) {
+	position: relative;
+    z-index: $zIndex;
+}
+
+@mixin displayLink($link: ".link") {
+    #{$link} {
+        display: none;
+    }
+}
+
+@mixin spaceEqual($direction) {
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+    flex-direction: $direction;
+}
+
+@mixin movePosition() {
+    right: 3rem;
+	top: 2rem;
+	opacity: 1;
+}

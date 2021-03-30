@@ -1,0 +1,44 @@
+body {
+    font-size: 1.3rem;
+    @include backgroundImage(url(../img/medium-background.jpg));
+}
+#name {
+    font-size: 2rem;
+}
+@include displayLink(".link"); /*dropdown menu displayed*/
+.navbar-links {
+    margin-bottom: $thin-space;
+}
+.home {
+    @include backgroundImage(url(../img/medium-pc-image.jpg));
+    #caption {
+        padding: $minimum-space $thin-space $minimum-space $minimum-space;
+    }
+}
+.title {
+    margin-left: $big-space;
+    margin-top: $thin-space;
+    padding: 7% $thin-space;
+    @include relativeOver(0);
+}
+.content {
+    @include relativeOver(1);
+    bottom: 3rem;
+}
+.strengths {
+    @include spaceEqual(row);
+    .icons-strengths {
+        width: $xl-space;
+        margin: $minimum-space;
+        img {
+            width: $xbig-space;
+        }
+    }
+}
+.contacts {
+    #profile {
+        width: $xl-space;
+    }
+    
+}
+

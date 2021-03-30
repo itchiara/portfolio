@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Portfolio</title>
+		<link rel="stylesheet" href="sass/main.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" />
+	</head>
+	<body>
+		<div id="container">
+			<!-- Header and home-->
+			<div class="section">
+				<!-- Header with name and menu-->
+				<header class="navbar">
+					<p id="name">Chiara Collura</p>
+					<i onclick="showMenu()" id="hamburger-menu" class="fas fa-bars"></i>
+					<nav class="links">
+						<ul>
+							<li class="navbar-links"><a href="#home">Home</a></li>
+							<li class="navbar-links"><a href="#about-me">About me</a></li>
+							<li class="navbar-links"><a href="#my-strengths">My strengths</a></li>
+							<li class="navbar-links"><a href="#contact-me">Contact me</a></li>
+						</ul>
+					</nav>
+				</header>
+
+				<!-- Home-->
+				<section class="home">
+					<p id="caption">
+						Hello there, <br />I am <em>Chiara Collura</em><br />Full-stack developer
+					</p>
+				</section>
+			</div>
+
+			<!-- About me-->
+			<div class="section">
+				<section class="paragraph" id="about-me">
+					<h1 class="title">About me</h1>
+					<div class="content about">
+						<h4>This is me, in a nutshell.</h4>
+						<p>
+							I am a young, <mark class="mark-pink">organized, collaborative and motivated</mark> full-stack development student.
+							<em>I love solving problems of any kind along with creating, building and organizing things so as to give them an aim.</em>
+							<br /><br>Moreover, I possess a <em>Bachelor of Language Sciences in Foreign languages and Business,</em> however after my graduation I
+							felt that this wasn't my path. I worked as an English teacher, customer service employee, executive assistant and front&back office
+							employee, improving my soft skills such as <mark class="mark-pink">teamwork</mark> and
+							<mark class="mark-pink">communication</mark> as well as <em>optimizing working processes.</em> <br />Yet I wasn't satisfied with my
+							life, thus <em>I decided to reinvent myself,</em> looking for the right job for me. <br /><br /><em>
+								I wanted to radically change my future.</em
+							>
+							But, how could I do that? Well, I discovered web development and I became aware that I could express my personal abilities in this
+							fascinating field. So, I started studying web development and everytime I code, I fell a trhilling enthusiasm that I never thought I
+							could experience.
+						</p>
+					</div>
+				</section>
+			</div>
+
+			<!-- My strengths-->
+			<div class="section">
+				<section class="paragraph" id="my-strengths">
+					<h1 class="title">My skills</h1>
+					<div class="content strengths">
+						<h4>My soft skills...</h4>
+						<p>
+							In my past work and academic experiences, I managed to enhance my soft skills. In particular, through teamwork projects at
+							university as well as through group activities during the Erasmus exchange Program, I could boost my communication and cooperation
+							abilities. <br /><br>Furthermore, <em>I became flexible in handling changes, solution-oriented and genuinly committed to continuous
+							learning.</em>
+						</p>
+						<div class="icons-strengths">
+							<img src="img/iconfinder_target-mark-goal-finish-targets-goals_3643730.svg" alt="precision" />
+							<div><mark class="mark-green">Precision</mark></div>
+						</div>
+						<div class="icons-strengths">
+							<img src="img/badge.svg" alt="reliable" />
+							<div><mark class="mark-green">Reliable</mark></div>
+						</div>
+						<div class="icons-strengths">
+							<img src="img/iconfinder_Teamwork_3533401.svg" alt="teamwork" />
+							<div><mark class="mark-green">Teamwork</mark></div>
+						</div>
+						<div class="icons-strengths">
+							<img src="img/language.svg" alt="english proficiency" />
+							<div><mark class="mark-green">English - C2</mark></div>
+						</div>
+						<h4>...and my hard skills</h4>
+						<p>
+							Currently, my key web development knowledge is: HTML5, CSS3 and the framework Sass. In the next months, I will upgrade my
+							proficiency so as to have all the tools to be a full-stack developer.
+							<em>I hope to be creating websites for many years to come.</em>
+						</p>	
+							
+						<div class="icons-strengths">
+							<img src="img/iconfinder_10-html5_104494.svg" alt="html" />
+							<div><mark class="mark-green">HTML5</mark></div>
+						</div>
+						<div class="icons-strengths">
+							<img src="img/iconfinder_CSS-3_692186.svg" alt="css" />
+							<div><mark class="mark-green">CSS3</mark></div>
+						</div>
+						<div class="icons-strengths">
+							<img src="img/iconfinder_sass_4691373.svg" alt="sass" />
+							<div><mark class="mark-green">Sass</mark></div>
+						</div>
+						
+					</div>
+				</section>
+			</div>
+
+			<!-- Contact me-->
+			<div class="section">
+				<section class="paragraph" id="contact-me">
+					<h1 class="title">Contact me</h1>
+					<div class="content contacts">
+						<img id="profile" class="responsive" src="img/cv_foto-removebg-preview.png" title="Chiara Collura" alt="chiara collura" />
+						<form method="GET" action="">     
+							<input name="name" type="text" class="message-contact" placeholder="Name" />   
+							<input name="email" type="text" class="message-contact" placeholder="Email" />
+							<textarea name="text" class="message-contact textarea" placeholder="Comment"></textarea>
+							<input type="submit" value="SEND"/>
+						</form>
+						<ul id="list-contacts">
+							<li>
+								<a href="https://www.facebook.com/collura.chiara/"><img src="img/facebook.svg" alt="facebook" /></a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/chiaracollura/"><img src="img/linkedin.svg" alt="Linkedin" /></a>
+							</li>
+							<li>
+								<a href="mailto:collurachiara1@gmail.com"><img src="img/gmail.svg" alt="Gmail" /></a>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+
+			<!--Footer-->
+			<footer>
+				<p>&#169; 2021. All rigths reserved.</p>
+			</footer>
+		</div>
+		<script>
+			function showMenu() {
+				const i = document.querySelector(".links");
+				if (i.style.display === "none" ) {
+					i.style.display = "flex";
+				} else {
+					i.style.display = "none";
+				}
+			}
+		</script>
+	</body>
+</html>
