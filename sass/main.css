@@ -1,0 +1,674 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+  font-size: 16px;
+  line-height: 145%;
+}
+
+body::-webkit-scrollbar {
+  width: 0.75em;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #d9d9d9;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 1em;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #9bb0b0;
+}
+
+body h1 {
+  font-size: 180%;
+}
+
+body em {
+  font-style: italic;
+}
+
+body ul li {
+  list-style: none;
+}
+
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body a:hover {
+  color: #a6a6a6;
+}
+
+/*Navbar ALL PAGES*/
+.links {
+  width: 100%;
+  z-index: 10;
+}
+
+.links #name {
+  text-transform: uppercase;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.links .navbar-toggler {
+  font-size: 0.75em;
+  border: none;
+}
+
+.links #navbarResponsive {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.links #navbarResponsive .navbar-nav {
+  text-align: center;
+}
+
+/**********PAGE1*********/
+/*Home*/
+#page1 .links {
+  position: fixed;
+}
+
+.home {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url(../img/small-pc-image.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#caption {
+  padding: 2%;
+  text-transform: uppercase;
+}
+
+#caption #first-line {
+  text-orientation: mixed;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+}
+
+#caption #second-line {
+  font-size: 0.75rem;
+}
+
+/*Photo*/
+.photo {
+  height: 100vh;
+  text-align: center;
+}
+
+.photo .small-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #d9d9d9;
+  padding: 2% 2% 0 2%;
+}
+
+.photo .small-content,
+.photo button {
+  position: relative;
+  top: 45%;
+}
+
+.section-page2 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url(../img/scrivere-small.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.section-page3 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url(../img/code-small.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.section-page4 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url(../img/phone-small.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+/**********PAGE2-3-4*********/
+/*Sections*/
+.title {
+  position: relative;
+  z-index: -1;
+  /*position relative z-index*/
+  margin-left: 15%;
+  margin-top: 5%;
+  padding: 15% 5%;
+  background-color: #12171a;
+  color: white;
+}
+
+.text {
+  position: relative;
+  z-index: 0;
+  /*position relative z-index*/
+  margin: 5% 5% 10% 5%;
+  padding: 5%;
+  top: 1rem;
+  /*position relative z-index*/
+  border: 1px solid #d9d9d9;
+}
+
+/**********PAGE3*********/
+.skills .icons-skills > img {
+  width: 15%;
+}
+
+.skills .icons-skills {
+  margin: 10% 0;
+  text-align: center;
+}
+
+/**********PAGE4*********/
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contacts #profile {
+  width: 30%;
+  background-color: #a6a6a6;
+  border-radius: 10%;
+  margin-bottom: 5%;
+}
+
+.contacts form {
+  width: 100%;
+}
+
+.contacts form textarea {
+  height: 15vh;
+}
+
+.contacts form input[type="submit"],
+.contacts form .message-contact {
+  border: 1px solid white;
+  padding: 2%;
+  margin: 5% 0;
+}
+
+.contacts form .message-contact {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.contacts #list-contacts {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts #list-contacts li {
+  display: inline;
+}
+
+.contacts #list-contacts li img {
+  width: 5%;
+  margin-right: 5%;
+}
+
+/*Footer ALL PAGES*/
+footer {
+  padding: 1%;
+  background-color: #12171a;
+  color: #d9d9d9;
+}
+
+/*Mobile styles*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  body {
+    width: 100%;
+  }
+}
+
+/*Tablet styles*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /*
+body {
+	@include backgroundImage(url(../img/medium-background.jpg));
+}
+*/
+  /*Home PAGE1*/
+  .home {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(../img/medium-pc-image.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+  #caption {
+    padding: 5%;
+  }
+  #caption #first-line {
+    font-size: 2.5rem;
+  }
+  #caption #second-line {
+    font-size: 1.5rem;
+  }
+  .photo .small-content {
+    margin: auto;
+    width: 90%;
+  }
+  .section-page2 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(../img/scrivere-medium.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+  .section-page3 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(../img/code-medium.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+  .section-page4 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(../img/phone-medium.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+  /*Sections PAGES 2-3-4*/
+  .title {
+    margin-left: 30%;
+    padding: 7% 5%;
+    position: relative;
+    z-index: 0;
+  }
+  .text {
+    position: relative;
+    z-index: 1;
+    bottom: 3rem;
+  }
+  /*PAGE 3*/
+  .skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .skills .icons-skills {
+    width: 20%;
+    margin: 5% 2%;
+  }
+  .skills .icons-skills img {
+    width: 50%;
+  }
+  .skills .hard-skills-icons {
+    margin-bottom: 0;
+  }
+  /*page4*/
+  .contacts #profile {
+    width: 20%;
+  }
+  .contacts #contact-form {
+    width: 80%;
+  }
+  .contacts #list-contacts li img {
+    width: 7%;
+  }
+}
+
+/*Laptop styles*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /*
+body {
+	@include backgroundImage(url(../img/pexels-matej-776336.jpg));
+}
+*/
+  /*Home PAGE1*/
+  .home {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(../img/large-pc-image.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+  #caption {
+    padding: 5%;
+  }
+  #caption #first-line {
+    font-size: 2.5rem;
+  }
+  #caption #second-line {
+    font-size: 1.5rem;
+  }
+  .photo .small-content {
+    margin: auto;
+    width: 80%;
+  }
+  .section-page2 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(../img/scrivere-large.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+  .section-page3 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(../img/code-large.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+  .section-page4 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(../img/phone-large.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+  /*Sections PAGES 2-3-4*/
+  .paragraph {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    margin: 0 10%;
+  }
+  .paragraph .title {
+    margin-left: 0;
+    padding-right: 10%;
+    position: relative;
+    z-index: -1;
+    height: 100vh;
+  }
+  .paragraph .text {
+    position: relative;
+    z-index: 1;
+    opacity: 0.9;
+    top: 4rem;
+    /*position over title*/
+    margin: 0;
+  }
+  .paragraph .text:hover, .paragraph .text:focus, .paragraph .text:active {
+    /*with tab action*/
+    left: 3rem;
+    top: 2rem;
+    opacity: 1;
+  }
+  /*PAGE 3*/
+  .skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .skills .icons-skills {
+    width: 20%;
+    margin: 5% 2%;
+  }
+  .skills .icons-skills img {
+    width: 50%;
+  }
+  .skills .hard-skills-icons {
+    margin-bottom: 0;
+  }
+  /*page4*/
+  .contacts #profile {
+    width: 20%;
+  }
+  .contacts #list-contacts li img {
+    width: 7%;
+  }
+  /*Footer PAGES 2-3-4*/
+  #page2 footer,
+  #page3 footer,
+  #page4 footer {
+    margin-top: 5%;
+  }
+}
+
+/*Large screens*/
+@media only screen and (min-width: 1025px) {
+  /*
+body {
+	@include backgroundImage(url(../img/pexels-matej-776336.jpg));
+}
+*/
+  /*Home PAGE1*/
+  .home {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(../img/large-pc-image.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+  #caption {
+    padding: 5%;
+  }
+  #caption #first-line {
+    font-size: 2.5rem;
+  }
+  #caption #second-line {
+    font-size: 1.5rem;
+  }
+  .photo .small-content {
+    margin: auto;
+    width: 80%;
+  }
+  .section-page2 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(../img/scrivere-large.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+  .section-page3 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(../img/code-large.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+  .section-page4 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(../img/phone-large.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+  /*Sections PAGES 2-3-4*/
+  .paragraph {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    margin: 0 10%;
+  }
+  .paragraph .title {
+    margin-left: 0;
+    padding-right: 10%;
+    position: relative;
+    z-index: -1;
+    height: 100vh;
+  }
+  .paragraph .text {
+    position: relative;
+    z-index: 1;
+    opacity: 0.9;
+    top: 4rem;
+    /*position over title*/
+    margin: 0;
+  }
+  .paragraph .text:hover, .paragraph .text:focus, .paragraph .text:active {
+    /*with tab action*/
+    left: 3rem;
+    top: 2rem;
+    opacity: 1;
+  }
+  /*PAGE 3*/
+  .skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .skills .icons-skills {
+    width: 20%;
+    margin: 5% 2%;
+  }
+  .skills .icons-skills img {
+    width: 50%;
+  }
+  .skills .hard-skills-icons {
+    margin-bottom: 0;
+  }
+  /*page4*/
+  .contacts #profile {
+    width: 20%;
+  }
+  .contacts #list-contacts li img {
+    width: 7%;
+  }
+  /*Footer PAGES 2-3-4*/
+  #page2 footer,
+  #page3 footer,
+  #page4 footer {
+    margin-top: 5%;
+  }
+  .paragraph {
+    margin: 0 15%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

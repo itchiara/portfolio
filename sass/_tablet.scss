@@ -1,0 +1,71 @@
+/*
+body {
+	@include backgroundImage(url(../img/medium-background.jpg));
+}
+*/
+
+/*Home PAGE1*/
+.home {
+	@include backgroundImage(url(../img/medium-pc-image.jpg));
+}
+#caption {
+	padding: $thin-space;
+	#first-line {
+		font-size: 2.5rem;
+	}
+	#second-line {
+		font-size: 1.5rem;
+	}
+}
+.photo .small-content {
+	@include fixedWidth(90%);
+}
+.section-page2 {
+	@include backgroundImage(url(../img/scrivere-medium.jpg));
+}
+
+.section-page3 {
+	@include backgroundImage(url(../img/code-medium.jpg));
+}
+.section-page4 {
+	@include backgroundImage(url(../img/phone-medium.jpg));
+}
+
+/*Sections PAGES 2-3-4*/
+.title {
+	margin-left: $big-space;
+	padding: 7% $thin-space;
+	@include relativeOver(0);
+}
+.text {
+	@include relativeOver(1);
+	bottom: 3rem;
+}
+
+/*PAGE 3*/
+.skills {
+	@include spaceEqual(row);
+	.icons-skills {
+		width: $xl-space;
+		margin: $thin-space $minimum-space;
+		img {
+			width: $xbig-space;
+		}
+	}
+	.hard-skills-icons {
+		margin-bottom: 0;
+	}
+}
+
+/*page4*/
+.contacts {
+	#profile {
+		width: $xl-space;
+	}
+	#contact-form {
+		width: 80%;
+	}
+	#list-contacts li img {
+		width: 7%;
+	}
+}

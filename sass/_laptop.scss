@@ -1,0 +1,92 @@
+/*
+body {
+	@include backgroundImage(url(../img/pexels-matej-776336.jpg));
+}
+*/
+
+/*Home PAGE1*/
+.home {
+	@include backgroundImage(url(../img/large-pc-image.jpg));
+}
+#caption {
+	padding: $thin-space;
+	#first-line {
+		font-size: 2.5rem;
+	}
+	#second-line {
+		font-size: 1.5rem;
+	}
+}
+.photo .small-content {
+	@include fixedWidth(80%);
+}
+.section-page2 {
+	@include backgroundImage(url(../img/scrivere-large.jpg));
+}
+
+.section-page3 {
+	@include backgroundImage(url(../img/code-large.jpg));
+}
+.section-page4 {
+	@include backgroundImage(url(../img/phone-large.jpg));
+}
+
+/*Sections PAGES 2-3-4*/
+.paragraph {
+	@include center(center);
+	flex-flow: row nowrap;
+	margin: 0 $medium-space;
+	.title {
+		margin-left: 0;
+		padding-right: $medium-space;
+		@include relativeOver(-1);
+		height: 100vh;
+	}
+	.text {
+		@include relativeOver(1);
+		opacity: 0.9;
+		top: 4rem; /*position over title*/
+		margin: 0;
+		&:hover,
+		&:focus,
+		&:active {
+			/*with tab action*/
+			@include movePosition();
+		}
+	}
+}
+
+/*PAGE 3*/
+.skills {
+	@include spaceEqual(row);
+	flex-wrap: wrap;
+	.icons-skills {
+		width: $xl-space;
+		margin: $thin-space $minimum-space;
+		img {
+			width: $xbig-space;
+		}
+	}
+	.hard-skills-icons {
+		margin-bottom: 0;
+	}
+}
+
+/*page4*/
+.contacts {
+	#profile {
+		width: $xl-space;
+	}
+	#list-contacts li img {
+		width: 7%;
+	}
+}
+
+/*Footer PAGES 2-3-4*/
+#page2,
+#page3,
+#page4 {
+	footer {
+		margin-top: $thin-space;
+	}
+}

@@ -1,0 +1,176 @@
+@import "variables";
+@import "functions";
+@import "general-rules";
+
+/*Navbar ALL PAGES*/
+.links {
+	width: 100%;
+	z-index: 10;
+	#name {
+		text-transform: uppercase;
+		margin: 0;
+		font-family: "Courier New", Courier, monospace;
+	}
+	.navbar-toggler {
+		font-size: 0.75em;
+		border: none;
+	}
+	#navbarResponsive {
+		justify-content: flex-end;
+		.navbar-nav {
+			text-align: center;
+		}
+	}
+}
+
+/**********PAGE1*********/
+/*Home*/
+#page1 {
+	.links {
+		position: fixed;
+	}
+}
+.home {
+	@include backgroundImage(url(../img/small-pc-image.jpg));
+	height: 100vh;
+	display: flex;
+	align-items: flex-end;
+}
+#caption {
+	padding: $minimum-space;
+	text-transform: uppercase;
+	#first-line {
+		text-orientation: mixed;
+		writing-mode: vertical-lr;
+	}
+	#second-line {
+		font-size: 0.75rem;
+	}
+}
+/*Photo*/
+.photo {
+	height: 100vh;
+	text-align: center;
+	.small-content {
+		background-color: $background-black-transparent;
+		color: $light-primary-color;
+		padding: $minimum-space $minimum-space 0 $minimum-space;
+	}
+	.small-content,
+	button {
+		position: relative;
+		top: 45%;
+	}
+}
+.section-page2 {
+	@include backgroundImage(url(../img/scrivere-small.jpg));
+}
+
+.section-page3 {
+	@include backgroundImage(url(../img/code-small.jpg));
+}
+.section-page4 {
+	@include backgroundImage(url(../img/phone-small.jpg));
+}
+
+/**********PAGE2-3-4*********/
+/*Sections*/
+.title {
+	@include relativeOver(-1); /*position relative z-index*/
+	margin-left: $large-space;
+	margin-top: $thin-space;
+	padding: $large-space $thin-space;
+	background-color: $background-black;
+	color: white;
+}
+.text {
+	@include relativeOver(0); /*position relative z-index*/
+	margin: $thin-space $thin-space $medium-space $thin-space;
+	padding: $thin-space;
+	top: 1rem; /*position relative z-index*/
+	border: 1px solid $light-primary-color;
+}
+
+/**********PAGE3*********/
+.skills {
+	.icons-skills > img {
+		width: $large-space;
+	}
+	.icons-skills {
+		margin: $medium-space 0;
+		text-align: center;
+	}
+}
+/**********PAGE4*********/
+.contacts {
+	@include center(center);
+	flex-direction: column;
+	#profile {
+		width: $big-space;
+		background-color: $primary-color;
+		border-radius: $medium-space;
+		margin-bottom: $thin-space;
+	}
+	form {
+		width: 100%;
+
+		textarea {
+			height: 15vh;
+		}
+		input[type="submit"],
+		.message-contact {
+			border: 1px solid white;
+			padding: $minimum-space;
+			margin: $thin-space 0;
+		}
+		.message-contact {
+			display: block;
+			width: 100%;
+			border-bottom: 1px solid black;
+		}
+	}
+	#list-contacts {
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		li {
+			display: inline;
+			img {
+				width: $thin-space;
+				margin-right: $thin-space;
+			}
+		}
+	}
+}
+
+/*Footer ALL PAGES*/
+footer {
+	padding: 1%;
+	background-color: $background-black;
+	color: $light-primary-color;
+}
+
+/*Mobile styles*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	body {
+		width: 100%;
+	}
+}
+
+/*Tablet styles*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+	@import "tablet";
+}
+
+/*Laptop styles*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	@import "laptop";
+}
+
+/*Large screens*/
+@media only screen and (min-width: 1025px) {
+	@import "laptop";
+	.paragraph {
+		margin: 0 $large-space;
+	}
+}

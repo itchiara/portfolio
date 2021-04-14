@@ -1,0 +1,43 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+	font-size: 16px;
+	line-height: 145%;
+	&::-webkit-scrollbar {
+		width: 0.75em;
+		&-track {
+			background-color: $light-primary-color;
+		}
+		&-thumb {
+			background-color: darkgrey;
+			border-radius: 1em;
+			&:hover {
+				background-color: $thirdColorLighter;
+			}
+		}
+	}
+	h1 {
+		font-size: 180%;
+	}
+	em {
+		font-style: italic;
+	}
+	ul li {
+		list-style: none;
+	}
+	a {
+		text-decoration: none;
+		color: inherit;
+		&:hover {
+			color: $primary-color;
+		}
+	}
+}
